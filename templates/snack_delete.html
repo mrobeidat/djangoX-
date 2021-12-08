@@ -1,0 +1,11 @@
+{% extends "_base.html" %}
+
+{% block content%}
+<ul>
+<form method="post">
+    {% csrf_token %}
+    <b><p style="color:red">Are you sure you want to delete this snack ?</p></b>
+    <input type="submit" value="Confirm">
+</form>
+</ul>
+{% endblock %}

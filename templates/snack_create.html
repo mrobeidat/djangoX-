@@ -1,0 +1,42 @@
+{% extends '_base.html' %}
+
+{% block content %}
+
+<h1>Create new snack </h1>
+<form class="form" action="", method="post">{% csrf_token %}
+{{form.as_p}}
+<input class="button" type="submit", value="create">
+
+</form>
+
+<style>
+  .form {
+  margin-left: 30%;
+  background-color: #2d2ba9;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 320px;
+  padding: 20px;
+  width: 600px;
+}
+.button {
+  border-radius: 20px;
+  background-color: #f80909;
+  border: none;
+  color: white;
+  padding: 9px 22px;
+  
+  text-align: center;
+  font-size: 16px;
+  margin: -7px 2px;
+  opacity: 0.6;
+  transition: 0.9s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {opacity: 1}
+</style>
+
+{% endblock %}
